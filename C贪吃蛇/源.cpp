@@ -91,7 +91,7 @@ int biteself()
 	}
 	return 0;
 }
-void createfood()//随机出现食物
+void createfood()
 
 {
 
@@ -167,12 +167,6 @@ void snakemove()
 			q = head;
 			Pos(q->x, q->y);
 			printf("■");
-			/*while (q != head)
-			{
-				Pos(q->x, q->y);
-				printf("■");
-				q = q->next;
-			}*/
 			score = score + add;
 			createfood();
 		}
